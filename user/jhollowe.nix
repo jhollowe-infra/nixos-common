@@ -26,6 +26,6 @@ in {
     ];
 
     # ensure user can run nix commands
-    nix.allowedUsers = [ "${username}" ];
+    nix.settings.allowed-users = [ "${username}" ];
   };
 }

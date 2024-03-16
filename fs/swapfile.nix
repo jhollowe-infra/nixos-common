@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
   config = {
     swapDevices = [
@@ -7,6 +7,6 @@
         size = 1024; # in MB
       }
     ];
-    boot.kernel.sysctl."vm.swappiness" = 0;
+    boot.kernel.sysctl."vm.swappiness" = lib.mkDefault 0;
   };
 }

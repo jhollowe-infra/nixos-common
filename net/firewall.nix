@@ -2,7 +2,7 @@
 {
   config = {
     networking.firewall = {
-      enable = lib.mkForce true;
+      enable = lib.mkDefault true;
       # allowPing included in _default.nix
       # allowedTCPPorts = [
       #   80  # HTTP

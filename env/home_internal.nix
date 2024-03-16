@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./ny_time.nix
     ./en_us_utf8.nix
+    ./ny_time.nix
     ../net/_default.nix
   ];
   config = {

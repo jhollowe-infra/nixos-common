@@ -9,6 +9,6 @@
     users.mutableUsers = false;
 
     # let users in the `wheel` group run nix commands
-    nix.allowedUsers = [ "@wheel" ];
+    nix.settings.allowed-users = [ "@wheel" ];
   };
 }
