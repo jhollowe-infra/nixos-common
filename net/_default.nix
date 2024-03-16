@@ -2,7 +2,6 @@
 {
   imports = [
     ./firewall.nix
-    ./time.nix
   ];
 
   config = {
