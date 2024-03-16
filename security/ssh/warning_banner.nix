@@ -1,0 +1,21 @@
+{ config, pkgs, ... }:
+
+{
+  config = {
+    services.openssh.banner = ''
+      ************************************ WARNING ***********************************
+
+      Unauthorized access is strictly prohibited and will result in immediate
+      disciplinary/legal action. All activity is monitored and recorded.
+      Unauthorized access will be investigated and punished to the fullest extent
+      of the law.
+
+      By accessing this system, you acknowledge that all data stored and processed
+      here is confidential and should not be disclosed to unauthorized parties.
+
+      If you are not an authorized person, please log out immediately from the system.
+
+      ********************************************************************************
+    '';
+  };
+}
