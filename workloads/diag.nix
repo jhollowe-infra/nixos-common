@@ -5,7 +5,6 @@
     environment.systemPackages = with pkgs; [
       # NETWORKING #
       dig
-      tcpdump
       traceroute
       iputils
       # TEXT AND TERMINAL #
@@ -14,12 +13,7 @@
       btop
       htop
       iftop
-      # HARDWARE #
-      usbutils
-      pciutils
     ];
-    # add MTR and allow it to do all the permissions setup it needs to properly run
-    programs.mtr.enable = true;
 
     # allow this host to respond to pings
     networking.firewall.allowPing = true;
