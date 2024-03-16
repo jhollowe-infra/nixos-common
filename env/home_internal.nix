@@ -3,6 +3,7 @@
 {
   imports = [
     ./ny_time.nix
+    ../net/_default.nix
   ];
   config = {
     networking = {
