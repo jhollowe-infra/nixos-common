@@ -15,7 +15,7 @@
       htop
       iftop
       # HARDWARE #
-      lsusb
+      usbutils
       pciutils
     ];
     # add MTR and allow it to do all the permissions setup it needs to properly run
