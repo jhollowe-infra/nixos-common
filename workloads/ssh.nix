@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./limit_auth.nix
+    ../security/ssh/limit_auth.nix
   ];
 
   config = {

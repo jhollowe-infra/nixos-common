@@ -15,6 +15,7 @@
       nano
       tmux
       vim
+      nixpkgs-fmt # VS Code IDE extension formatting
       # COMPRESSION #
       gzip
       pigz
