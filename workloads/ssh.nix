@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ ... }:
 {
   imports = [
     ../security/ssh/limit_auth.nix

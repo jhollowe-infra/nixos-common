@@ -1,5 +1,4 @@
-{ config, pkgs, modulesPath, ... }:
-
+{ ... }:
 {
   imports = [
     ./en_us_utf8.nix

@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ ... }:
 {
   config = {
     # Enable the KDE Plasma Desktop Environment.

@@ -1,6 +1,4 @@
-
-{ config, pkgs, ... }:
-
+{ ... }:
 {
   config = {
     # enable automated TRIMs on the storage

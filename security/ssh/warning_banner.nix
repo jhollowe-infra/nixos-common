@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ ... }:
 {
   config = {
     services.openssh.banner = ''

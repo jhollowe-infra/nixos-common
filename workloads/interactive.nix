@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ pkgs, ... }:
 {
   imports = [
     ./flakes.nix
