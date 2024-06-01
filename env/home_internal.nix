@@ -3,7 +3,7 @@
   imports = [
     ./en_us_utf8.nix
     ./ny_time.nix
-    ../net/_default.nix
+    ../net/default.nix
   ];
   config = {
     networking = {
