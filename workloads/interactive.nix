@@ -3,6 +3,7 @@
   imports = [
     ./flakes.nix
     ./diag.nix
+    ../security/gpg-agent.nix
   ];
   config = {
     environment.systemPackages = with pkgs; [
