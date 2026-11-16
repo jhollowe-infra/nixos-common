@@ -1,6 +1,6 @@
-{ ... }:
+{ modulesPath, ... }:
 {
   imports = [
-    <nixpkgs/nixos/modules/profiles/hardened.nix>
+    (modulesPath + "/profiles/hardened.nix")
   ];
 }
