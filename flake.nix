@@ -1,12 +1,7 @@
 {
   description = "jhollowe's common NixOS modules";
 
-  inputs = {
-    # Secret provisioning; used by the security-sops module
-    sops-nix.url = "github:Mic92/sops-nix";
-  };
-
-  outputs = { self, sops-nix, ... }: {
+  outputs = { self }: {
     # Modules are meant to be picked individually, so there is no `default`.
     nixosModules = {
       # directories (with default.nix)
@@ -39,12 +34,6 @@
       security-audit = ./security/audit.nix;
       security-gpg-agent = ./security/gpg-agent.nix;
       security-hardened = ./security/hardened.nix;
-      security-sops = {
-        imports = [
-          sops-nix.nixosModules.sops
-          ./security/sops.nix
-        ];
-      };
       security-ssh-disable-forwarding = ./security/ssh/disable_fowarding.nix;
       security-ssh-harden-client = ./security/ssh/harden_client.nix;
       security-ssh-limit-auth = ./security/ssh/limit_auth.nix;
