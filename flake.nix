@@ -22,6 +22,7 @@
       env-raspi = ./env/raspi.nix;
 
       fs-nix-auto-optimise = ./fs/nix_auto_optimise.nix;
+      fs-nix-gc = ./fs/nix_gc.nix;
       fs-swapfile = ./fs/swapfile.nix;
       fs-zram-swap = ./fs/zram_swap.nix;
       fs-trim = ./fs/trim.nix;
@@ -29,12 +30,10 @@
       net-firewall = ./net/firewall.nix;
       net-tailscale = ./net/tailscale.nix;
 
-      overrides-zram = ./overrides/modules/zram.nix;
-
       security-audit = ./security/audit.nix;
       security-gpg-agent = ./security/gpg-agent.nix;
       security-hardened = ./security/hardened.nix;
-      security-ssh-disable-forwarding = ./security/ssh/disable_fowarding.nix;
+      security-ssh-disable-forwarding = ./security/ssh/disable_forwarding.nix;
       security-ssh-harden-client = ./security/ssh/harden_client.nix;
       security-ssh-limit-auth = ./security/ssh/limit_auth.nix;
       security-ssh-warning-banner = ./security/ssh/warning_banner.nix;

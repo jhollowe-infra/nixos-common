@@ -1,7 +1,7 @@
-{ ... }:
+{ pkgs, ... }:
 {
   config = {
-    services.openssh.banner = ''
+    services.openssh.settings.Banner = "${pkgs.writeText "ssh-banner" ''
       ************************************ WARNING ***********************************
 
       Unauthorized access is strictly prohibited and will result in immediate
@@ -15,6 +15,6 @@
       If you are not an authorized person, please log out immediately from the system.
 
       ********************************************************************************
-    '';
+    ''}";
   };
 }
