@@ -1,6 +1,7 @@
 # nixos-common
 
-Common shared NixOS modules/flakes which can be reused 
+Common shared NixOS modules/flakes which can be reused.
+
 ## Usage
 
 Add as a flake input and import the modules you want:

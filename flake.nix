@@ -26,6 +26,7 @@
       fs-swapfile = ./fs/swapfile.nix;
       fs-zram-swap = ./fs/zram_swap.nix;
       fs-trim = ./fs/trim.nix;
+      fs-zfs-auto-maintenance = ./fs/zfs_auto_maintenance.nix;
 
       net-firewall = ./net/firewall.nix;
       net-tailscale = ./net/tailscale.nix;
